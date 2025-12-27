@@ -1,4 +1,5 @@
 import { ArrowDown } from "lucide-react";
+import image from "../assets/headshot1.jpg";
 
 export const HeroSection = () => {
 
@@ -18,6 +19,9 @@ export const HeroSection = () => {
                         <a href="#projects" className="cosmic-button">
                             View My Work
                         </a>
+                    </div>
+                    <div className="relative mx-auto bg-gradient-to-b rounded-full w-80 h-80 mt-20 overflow-hidden">
+                        <img src={image} alt="Profile" className="w-full h-full object-cover" />
                     </div>
                 </div>
             </div>

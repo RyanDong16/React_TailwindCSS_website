@@ -3,21 +3,39 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 const projects = [
     {
         id: 1,
-        title: "test",
-        description: "test",
-        image: "/projects/barbenheimer.png",
-        tags: ["React", "CSS", "Subabase"],
-        demoUrl: "#...",
-        githubUrl: "#...",
+        title: "Creatorverse",
+        description: "Creatorverse allows users to spotlights their favorite YouTube creators on a global platform for the entire universe to see.",
+        image: "/projects/creatorverse.png",
+        tags: ["React", "CSS", "Subabase", "CRUD"],
+        demoUrl: "https://www.loom.com/share/84f93f0c93984394b460300a4190806b",
+        githubUrl: "https://github.com/RyanDong16/web103_prework/tree/main/prework/creatorverse",
     },
     {
         id: 2,
-        title: "test2",
-        description: "test2",
-        image: "/projects/skyfall2.png",
-        tags: ["React", "CSS", "Subabase"],
-        demoUrl: "#...",
-        githubUrl: "#...",
+        title: "Legends Plaza",
+        description: "For one night only, The Legends Plaza will host a never-forgotten extravaganza of the greatest rock bands of all time! Four different venues, each home to legendary rock performances.",
+        image: "/projects/legendsplaza.png",
+        tags: ["React", "PostgreSQL", "Express", "Render"],
+        demoUrl: "https://www.loom.com/share/4ca334af24774bccb849dc97ef1d778a",
+        githubUrl: "https://github.com/RyanDong16/WEB103_project3/tree/main/WEB103_project3",
+    },
+    {
+        id: 3,
+        title: "December Nights Brochure",
+        description: "Celebrate the magic of the holly jolly Christmas season in San Diego’s stunning Balboa Park.",
+        image: "/projects/christmasbrochure.gif",
+        tags: ["Canva", "Marketing"],
+        demoUrl: "https://drive.google.com/file/d/1cVoj5CTimCx8-zb2YVrGQItaCL3Viqx1/view?usp=sharing",
+        githubUrl: "...",
+    },
+    {
+        id: 4,
+        title: "Duo Confections",
+        description: "Celebrate the magic of the holly jolly Christmas season in San Diego’s stunning Balboa Park!",
+        image: "/projects/...",
+        tags: ["Adverisement", "Marketing", "Premiere Pro"],
+        demoUrl: "https://drive.google.com/file/d/1cVoj5CTimCx8-zb2YVrGQItaCL3Viqx1/view?usp=sharing",
+        githubUrl: "...",
     }
 ];
 
@@ -44,7 +62,7 @@ export const ProjectsSection = () => {
                             <div className="p-6">
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tags.map((tag) => (
-                                        <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                                        <span key={tag} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                                             {tag}
                                         </span>
                                     ))}

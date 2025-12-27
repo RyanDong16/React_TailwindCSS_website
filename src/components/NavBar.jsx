@@ -1,7 +1,6 @@
 import { cn } from "@/library/utils";
 import { useState, useEffect } from "react";
 import {Menu, X } from "lucide-react";
-// 1:18:27 12-23-25
 
 const navItems = [
     {name: "Home", href: "#hero"},
